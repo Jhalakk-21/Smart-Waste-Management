@@ -1,19 +1,10 @@
 # Smart-Waste-Management
-# *Servo Motor, Stepper Motor, and Ultrasonic Distance Sensors Integration*
 
-## *Project Overview*
-
-This project integrates a *Servo Motor, a **Stepper Motor, and two **Ultrasonic Distance Sensors* using a *Raspberry Pi* and *Arduino Uno*. The system is designed to control motors based on distance measurements from the sensors, enabling various automation tasks such as object detection and motor movements based on the detected distances.
-
-## *Table of Contents*
-- [Project Overview](#project-overview)
-- [Components Used](#components-used)
-- [Wiring and Connections](#wiring-and-connections)
-- [Software Requirements](#software-requirements)
-- [Installation and Setup](#installation-and-setup)
-- [Usage](#usage)
-- [License](#license)
-
+## Directory structure:
+  The folder models contains the code of 4 models we trained and have presented.
+  The folder lite-models contains the tensorflow lite versions of first, second and fourth model above. They can be used to run and check the working. Their paths needed to be added in the main\_code.py
+  The file main_code.py includes the code for the image capturing, classification using the model, and running the motor.
+  The Arduino code is to run the ultrasonic distance sensors.
 ## *Components Used*
 - Raspberry Pi 3/4 B+
 - Arduino Uno
@@ -65,8 +56,19 @@ This project integrates a *Servo Motor, a **Stepper Motor, and two **Ultrasonic 
 - Python Libraries:
   - RPi.GPIO
   - time
+  - fswebcam
+  - numpy
+  - opencv-python
+  - tflite-runtime
+  - gpiozero
+  - paho.mqtt.client
+  - json
+  - tkinter
+  - matplotlib
 - Arduino Libraries:
   - NewPing
+  - ESP8266WiFi.h
+  - PubSubClient.h
 
 ### *Python Libraries Installation (for Raspberry Pi)*
 ```bash
