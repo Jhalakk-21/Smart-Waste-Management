@@ -130,19 +130,19 @@ def rotate_motor(value):
         
         elif value == 0:
             
-            print("Rotating 1/4 turn in opposite direction")
+            print("Rotating 1/4 turn in forward direction")
             step_motor(quarter_rotation_steps, direction=1)
             current_state = 0
 
         elif value == 2:
            
-            print("Rotating 1/2 turn in opposite direction")
+            print("Rotating 1/4 turn in opposite direction")
             step_motor(quarter_rotation_steps, direction=-1)
             current_state = 2
 
         elif value == 3:
             
-            print("Rotating 1/4 turn in forward direction")
+            print("Rotating 1/2 turn in forward direction")
             step_motor(half_rotation_steps, direction=1)
             current_state = 3
     if current_state ==2:
@@ -151,19 +151,19 @@ def rotate_motor(value):
         
         elif value == 0:
             
-            print("Rotating 1/4 turn in opposite direction")
+            print("Rotating 1/2 turn in forward direction")
             step_motor(half_rotation_steps, direction=1)
             current_state = 0
 
         elif value == 1:
            
-            print("Rotating 1/2 turn in opposite direction")
+            print("Rotating 1/4 turn in forward direction")
             step_motor(quarter_rotation_steps, direction=1)
             current_state = 1
 
         elif value == 3:
             
-            print("Rotating 1/4 turn in forward direction")
+            print("Rotating 1/4 turn in opposite direction")
             step_motor(quarter_rotation_steps, direction=-1)
             current_state = 3
     if current_state ==3:
@@ -178,13 +178,13 @@ def rotate_motor(value):
 
         elif value == 2:
            
-            print("Rotating 1/2 turn in opposite direction")
+            print("Rotating 1/4 turn in forward direction")
             step_motor(quarter_rotation_steps, direction=1)
             current_state = 2
 
         elif value == 1:
             
-            print("Rotating 1/4 turn in forward direction")
+            print("Rotating 1/2 turn in forward direction")
             step_motor(half_rotation_steps, direction=1)
             current_state = 1
 model_path = "transfer_fd_spatial.tflite"
