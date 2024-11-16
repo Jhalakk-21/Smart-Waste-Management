@@ -70,6 +70,4 @@
   - ESP8266WiFi.h
   - PubSubClient.h
 
-### *Python Libraries Installation (for Raspberry Pi)*
-```bash
-pip install RPi.GPIO
+
