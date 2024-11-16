@@ -70,4 +70,10 @@
   - ESP8266WiFi.h
   - PubSubClient.h
 
-
+## Execution
+Add the lite-model path to model_dir variable in the main_code.py.
+All the connections are to be made as described above.
+Run 
+```bash
+python3 main_code.py
+      
